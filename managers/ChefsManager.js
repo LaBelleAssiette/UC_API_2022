@@ -3,7 +3,8 @@ const Database = require('../database');
 const SCHEMA = {
     firstname: String,
     lastname: String,
-    description: String
+    description: String,
+    photo: String
 }
 
 class PrivateChefsModel {
@@ -39,6 +40,7 @@ class ChefsManager {
      * @param {string} chef.firstname
      * @param {string} chef.lastname
      * @param {string} chef.description
+     * @param {string} chef.photo
      */
     constructor(chef = {}) {
         this.model = MongooseModel.getInstance().model;
